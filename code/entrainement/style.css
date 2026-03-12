@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*ici , le box sizing permet d'uniformiser la boite de calcul .
+    ainsi,la largeur et la hauteur que je definis les bordures et
+    le padding*/
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    justify-content: center; 
+    /* le justify content est une propiete css utilisée dans les flex box
+    pour aligner les elements enfant sur l'axe forizontal et la valeur 
+    center lui permet de mettre les elements au centre  */
+
+    /* background: black; */
+}
+.containeur{
+    width: 420px;
+    height: 650px;
+    background: aqua;
+    border-radius: 10px;
+    box-shadow: 0 0.3cm 20px black;
+
+    
+}
+
+h2{
+    text-align: center;
+    margin-top: 0.70cm;
+    margin-bottom: 0.50cm;
+    border-bottom: 8px double;
+    margin-left: 1.2cm;
+    margin-right: 1.2cm;
+    padding-bottom:0.5cm;
+
+    /*la j'ai juste un peu decallé le titr du formulaire des autres contenu*/
+}
+
+.input-box{
+    height: 70px;
+    margin-left: 1.2cm;
+}
+
+.input-box input{
+    /*ceci est un selecteur combiné qui demande au navigateur de cibler tous 
+les elements "input" qui se trouvent dans un element ayant la classe input-box*/
+
+width: 8.8cm;
+height: 0.90cm;
+border-radius: 5px;
+
+}
+
+.input-box select{
+width: 8.8cm;
+height: 0.90cm;
+
+}
+
+.input-box label{
+    font-size: 0.5cm;
+}
+
+.input-box ::placeholder{
+    /*grace a ce code je cible le texte d'indice (le placeholder)
+    d'un champ de formulaire qui se trouve a l'interieur d'un element ayant la 
+    classe input-box*/
+
+    font-size: 0.4cm;
+}
+
+.sexe label{
+    font-size: 0.5cm;
+}
+.sexe{
+    margin-left: 1.2cm;
+    margin-bottom: 0.40cm;
+    
+}
+
+input[type=submit]{
+    margin-top: 0.5cm;
+    width: 4cm;
+    height: 0.90cm;
+    margin-left: 1.2cm;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    background-image:linear-gradient(to left , white , aqua);
+    font-size: 20px;
+    padding-bottom: 0.15cm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+input[type=submit]:hover{
+    /*la pseudo classe hover permet de definir l'apparence du bouton
+    au survol*/
+    background-image:linear-gradient(to right , white , aqua ) ;
+    box-shadow: 0 0.3cm 20px black;
+
+}
+
+input[type=submit]:active{
+    /*la pseudo classe :active permet de definir l'apparence du bouton
+    au clic*/
+    background: white;
+}
+
+input[type=reset]{
+     margin-top: 0.5cm;
+    width: 4cm;
+    height: 0.90cm;
+     margin-left: 0.72cm;
+     display: inline-block;
+     cursor: pointer;
+     border-radius: 5px;
+     background-image:linear-gradient(to right , white , aqua);
+     font-size: 20px;
+     padding-bottom: 0.15cm;
+     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type=reset]:hover{
+    /*la pseudo classe hover permet de definir l'apparence du bouton
+    au survol*/
+    background-image:linear-gradient(to left ,  white , aqua) ;
+    box-shadow: 0 0.3cm 20px black;
+}
+
+input[type=reset]:active{
+    /*la pseudo classe :active permet de definir l'apparence du bouton
+    au clic*/
+    background: white;
+}
+
+
+
+

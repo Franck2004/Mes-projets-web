@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Ayons le Cœur sur la Main</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+        <a class="don-btn" href="don.html">Faire un don</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle">☰</button>
+    </div>
+  </header> -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <!-- logo.png dans le dossier -->
+        <img src="logo.png" alt="Logo Ayons le Cœur sur la Main" class="logo">
+      </a>
+      <!-- nom d'en tete -->
+       <div id="nom">
+        <p class="nom"> Ayons le Cœur sur la Main</p>
+      <p class="slogan">Amour-Fraternié-Solidarité</p>
+       </div>
+      
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+        <a class="don-btn" href="don.html">Faire un don</a>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+    </div>
+
+    <!-- decorative diagonal strip mixing colors -->
+    <div class="header-accent"></div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="actualites.html">Actualités</a>
+    <a href="contact.html">Contact</a>
+    <a class="don-btn" href="don.html">Faire un don</a>
+  </div>
+
+  <main class="container main-content">
+    <h1>CONTACT</h1>
+    <p class="muted">Tel : (+237) 672 881 296 / 699 969 355 </p>
+    <p class="muted">E-mail : ayonslecoeursurlamain10@gmail.com</p>
+
+    <section class="card">
+      <h3>Envoyez-nous un message</h3>
+      <form class="form-grid" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>Nom complet
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Téléphone
+          <input type="tel" name="phone">
+        </label>
+        <label>Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <div style="margin-top:8px">
+          <button class="btn-primary" type="submit">Envoyer</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <img src="logo.png" class="logo-small" alt="logo small">
+        <div><strong>AYONS LE CŒUR SUR LA MAIN</strong></div>
+      </div>
+      <div class="foot-right"><small class="muted">© 2025</small></div>
+    </div>
+  </footer> -->
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <img src="logo.png" alt="logo small" class="logo-small">
+        <div>
+          <strong>AYONS LE CŒUR SUR LA MAIN</strong>
+          <div class="small muted">Tel : (+237) 672 881 296 / 699 969 355</div>
+          <div class="small muted">Email:ayonslecoeursurlamain10@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="foot-right">
+        <small class="muted">© 2025 Ayons le Cœur sur la Main</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

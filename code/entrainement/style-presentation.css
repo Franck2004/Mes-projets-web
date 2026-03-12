@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*ici , le box sizing permet d'uniformiser la boite de calcul .
+    ainsi,la largeur et la hauteur que je definis les bordures et
+    le padding*/
+}
+
+body{
+  display: flex;
+    justify-content: center;
+}
+
+.contenneur{
+    width: 25cm;
+    height: 15cm;
+    /*  */
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, rgb(221, 250, 250), rgb(190, 189, 189));
+}
+
+.paragraphe{
+    /* border:2px solid; */
+    bottom: 3cm;
+    top: 9cm;
+    left: 12.9cm;
+    position: absolute;
+   height: 3cm;
+   width: 12cm;
+}
+
+
+.hello{
+    position: absolute;
+    
+    left: 12.9cm;
+    top:6.5cm;
+
+}
+
+.menu{
+    /* ici , menu est la classe de la classe de la liste non ordonnée du html
+    donc j'ai directement la possibilite de creer un menu de navigation grace a cela et avec un lien*/
+    position:absolute;
+    /* border: 0.1px solid; */
+    left: 12.9cm;
+    top:1cm;
+    list-style: none;
+    /*grace a list style j'enleve les puces de ma liste non ordonnée*/
+    width:9cm;
+    height:1.2cm;
+    padding-top:0.3cm;
+    border-radius:25px;
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color: rgb(108, 174, 233);
+}
+
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    /*pour que les liens ne soient plus soulignés*/
+}
+.menu a:hover{
+    color: aliceblue;
+}
+.menu a:active{
+    text-decoration: underline;
+    /* la je souligne le texte a chaque fois qu'on clique sur le lien */
+
+}
+
+.bouton{
+    position: absolute;
+    left: 12.9cm;
+    
+    top:3cm;
+    display:flex;
+    width: 11.5cm;
+    height: 3cm;
+    justify-content: space-between;
+}
+.b1{
+    /* position: absolute; */
+    /* border:2px solid; */
+    border-radius: 50%;
+    width:3cm;
+    height:3cm;
+    padding-top:1.2cm;
+    padding-left:0.25cm;
+    background-color: rgb(225, 197, 252); 
+
+}
+
+/* .b1 :hover{
+    color: pink;
+}     je vais chercher a faire changer l'image de fond du conteneur au survol*/
+
+.b1 a{
+    text-decoration: none;
+}
+.b2{
+    /* position: absolute; */
+    /* border:2px solid; */
+    border-radius: 50%;
+    width:3cm;
+    height:3cm;
+    padding-top:1.2cm;
+    padding-left:0.25cm;
+    background-color: rgb(207, 233, 255);
+
+}
+
+.b2 a{
+    text-decoration: none;
+}
+
+.b3{
+    /* position: absolute; */
+    /* border:2px solid; */
+    border-radius: 50%;
+    width:3cm;
+    height:3cm;
+    padding-top:1.2cm;
+    padding-left:0.25cm;
+    background-color: rgb(108, 174, 233);
+
+}
+
+.b3 a{
+    text-decoration: none;
+}
+
+.nom{
+    position: absolute;
+    font-size: 0.7cm;
+    /* border:2px solid; */
+}
+
+.photo{
+    position:absolute;
+    /* border:2px solid; */
+    width: 8cm;
+    height: 8cm;
+    border-radius:50%;
+    top: 3cm;
+    left:0.5cm;
+    overflow: hidden;
+    /*grace a cette propite je cache la partie de l'image qui depasse le conteneur */
+    
+}
+.photo img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    /* cette propiete permet a l'image de bien remplir le cercle*/
+}
+
+.footer{
+    /*  */
+    background-image: linear-gradient(to left,rgba(208, 127, 233, 0.486),rgb(87, 87, 235));
+    top: 12cm;
+    position: absolute;
+    height: 3cm;
+    width: 25cm;
+    display: flex;
+    border-radius: 20px;
+    font-weight: bold;
+    
+}
+
+.f1{
+    width: 6cm;
+    /*  */
+    padding-left:2.1cm;
+}
+.f2{
+    padding-top:0.3cm;
+    padding-left:2.1cm;
+    width: 7cm;
+    /*  */
+}
+.f3{
+    
+    width: 7cm;
+     /*  */
+}
+.f4{
+    width: 5cm;
+     /*  */
+}
+
+.cercle1{
+    position:absolute;
+    left:0.1cm;
+    top:0.68cm;
+    width:2cm;
+    height: 2cm;
+    border-radius: 50%;
+    /*  */
+    overflow: hidden;
+}
+
+.cercle1 img{
+     width: 100%;
+    height:100%;
+    object-fit: cover;
+    /* cette propiete permet a l'image de bien remplir le cercle*/
+}
+
+.cercle2{
+    position:absolute;
+    top:0.68cm;
+    width:2cm;
+    height: 2cm;
+    border-radius: 50%;
+    left:6.1cm;
+    /*  */
+    overflow: hidden;
+}
+
+.cercle2 img{
+     width: 100%;
+    height:100%;
+    object-fit: cover;
+    /* cette propiete permet a l'image de bien remplir le cercle*/
+}
+.cercle3{
+    position:absolute;
+    top:0.68cm;
+    width:2cm;
+    height: 2cm;
+    border-radius: 50%;
+    left:13.1cm;
+    /*  */
+    overflow: hidden;
+}
+
+.cercle3 img{
+     width: 100%;
+    height:100%;
+    object-fit: cover;
+    /* cette propiete permet a l'image de bien remplir le cercle*/
+}
+.cercle4{
+    position:absolute;
+    top:0.68cm;
+    width:2cm;
+    height: 2cm;
+    border-radius: 50%;
+    left:15.3cm;
+    /*  */
+    overflow: hidden;
+}
+
+.cercle4 img{
+     width: 100%;
+    height:100%;
+    object-fit: cover;
+    /* cette propiete permet a l'image de bien remplir le cercle*/
+}
+.cercle5{
+    position:absolute;
+    top:0.68cm;
+    width:2cm;
+    height: 2cm;
+    border-radius: 50%;
+    left:17.5cm;
+    
+    overflow: hidden;
+}
+
+.cercle5 img{
+     width: 100%;
+    height:100%;
+    object-fit: cover;
+    /* cette propiete permet a l'image de bien remplir le cercle*/
+}

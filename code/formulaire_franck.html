@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            exemple de formulaire
+        </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="containeur">
+        <form method="post" action="traitement.php">
+            <h2><b>Informations personnelles</b></h2><br><br>
+            <div class="input-box">
+            <label>NOM : </label>
+            <input type="text" placeholder="entrez votre nom " name="NOM"/><br>
+            </div>
+            <div class="input-box">
+            <label>PRENOM : </label>
+            <input type="text" placeholder="entrez votre prenom" name="PRENOM"/><br>
+            </div>
+            <div class="input-box">
+            <label>AGE : </label>
+            <input type="number" placeholder="quel est votre age?" name="AGE"/><br><br>
+            </div>
+            <div class="sexe">
+            <label>SEXE</label><br>
+            <input type="checkbox" name="masculin" checked="checked" />
+            <label>MASCULIN</label><br>                                                                                                                                                                                                               
+            <input type="checkbox" name="feminin">
+            <label>FEMININ </label><br><br>
+            </div>
+            <div class="loisirs">
+            <label>choix des loisirs: </label><br>
+            <select name="loisirs" id="loisirs">
+                <optgroup label="choisissez en un loisir">
+                    <option value="football"> FOOTBALL </option>
+                    <option value="basketball"> BASKETBALL </option>
+                    <option value="marathon"> MARATHON </option>
+                    <option value="tenis"> TENIS</option>
+                    <option value="natation"> NATATION </option>
+                    <option value="jeux videos"> JEUX VIDEOS </option>
+                    <option value="cinema"> CINEMA </option>
+                </optgroup>
+            </select>  <br><br><br><br>
+            </div>
+            <div class="metiers"> 
+            <label>choississez votre metier: </label><br>
+            <select name="metier" id="metier">
+                <optgroup label="choisissez votre metier">
+                    <option value="technicien"> technicien</option>
+                    <option value="proffesseur"> proffesseur</option>
+                    <option value="avocat"> avocat</option>
+                    <option value="menuisier">menuisier</option>
+                    <option value="devellopeur">devellopeur</option>
+            </select>  <br><br> 
+            </div>
+            <input type="submit" value="ENVOYER"/>
+            <input type="reset" value="REINITIALISER"/>
+       
+            
+         </form> 
+        </div >  
+    </body>
+</html> 

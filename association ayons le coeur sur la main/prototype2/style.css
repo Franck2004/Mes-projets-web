@@ -1,0 +1,340 @@
+/* style.css - version native (offline) */
+/* Colors */
+:root{
+  --pink:#E91E63;    /* rose */
+  --blue:#2196F3; /* bleu*/
+  --bg:#E3F2FD; /* bleu tres clair*/
+  --rc:#FCE4EC; /* rose tres clair*/
+  --muted:#6B6B6B;
+  --card-bg:#FAFAFA;
+}
+
+/* Basic reset */
+*{
+    box-sizing:border-box
+}
+html,body{
+    margin:0;padding:0;
+    height:100%;
+    /* background: blue; */
+    font-family:Arial, Helvetica, sans-serif;
+    background:no-repeat center / cover url(./images/7.webp); 
+    /* background:#2196F3;  */
+    color:#222;
+}
+
+/* 
+ background:no-repeat center / cover url(./images/fond.jpg);
+    background-attachment: fixed; */
+
+a{
+    color:var(--pink);
+    text-decoration:none
+}
+.container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 16px
+}
+
+/* Header */
+.site-header{
+    background:var(--pink);
+    /* background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); */
+    color:white
+}
+.header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 0
+}
+.brand{font-weight:700;
+    font-size:20px;
+    color:white
+}
+.main-nav{
+    display:flex;
+    gap:18px;
+    align-items:center
+}
+
+.main-nav a{
+    color:white;
+    padding:8px 6px;
+    border-radius:6px
+}
+
+.main-nav a:hover{
+    border-bottom:3px solid #f3f6f8ff;
+}
+
+.don-btn{
+    background:var(--blue);color:var(--pink);
+    padding:8px 12px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+/* Mobile nav toggle */
+.nav-toggle{
+    display:none;
+    background:transparent;
+    border:0;
+    color:white;
+    font-size:22px
+}
+
+/* Mobile menu */
+.mobile-menu{
+    display:none;
+    background:var(--pink);
+    padding:12px;
+}
+.mobile-menu a{
+    display:block;
+    color:white;
+    padding:8px 0;
+    border-bottom:1px solid rgba(255,255,255,0.06)
+}
+
+/* header d'apres l'entete ou se trouve le nom de l'association */
+.hero{
+    /*background:#E3F2FD bleu dou;*/
+    padding:36px 0;
+    border-bottom:2px solid var(--pink);
+    /* border-radius:8px; */
+}
+.hero-inner{
+    text-align:center;
+    padding:12px
+}
+.hero h1{
+    color:var(--pink);
+    font-size:32px;
+    margin:0 0 12px
+}
+
+.lead{
+    color:#333;
+    margin:0 auto 12px;
+    max-width:800px
+}
+
+.cta{
+    display:inline-block;
+    background:var(--pink);
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    font-weight:700;
+    margin-top:8px
+}
+
+.cta:hover{
+    box-shadow: 5px 5px 10px 2px black;
+}
+
+/* Three cards */
+.three-cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:30px 0;
+}
+
+.three-cards article{
+    /* background:var(--card-bg); */
+    /*j'ai plutot envie d'une image parlante dans chaque article*/
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05)
+}
+
+.three-cards article:hover{
+    box-shadow: 5px 5px 10px 2px black;
+}
+
+.three-cards h3{
+    color:var(--pink);
+    margin-top:0
+}
+
+/*ici j'ai envie d'ajouter une image transparente a chauque section , et comme le faire me paraissait compliqué plus que
+j'ai ^pas envie de creer des pseudos classes , j'ai juste creer une image degradee transparente*/
+
+
+.art1{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/12.jpg) no-repeat center / cover;   
+    /* background: #FAFAFA; */
+    /* color: white;  */
+   
+}
+/* je fais de meme pour les autres */
+
+.art2 {
+    background: #FAFAFA;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/13.jpg) no-repeat center / cover; 
+    color: white; */
+}
+
+.art3 {
+    background: #FAFAFA;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/11.jpg) no-repeat center / cover; */
+}
+
+/*  css pour appeler ou rejoindre la communaute */
+.appeal{
+    padding:24px 0;
+    text-align:center;
+    border-radius:10px;
+    height: 6cm;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/15.jpg) no-repeat center / cover;
+    color: black; /* pour bien voir le texte */
+}
+.appeal h2{
+    color:var(--pink);
+    margin:0 0 8px
+}
+
+/* css pour Contacter l'association */
+.contact-cta{
+    padding:18px 0;
+    text-align:center;
+    font-weight:bold;
+}
+
+.contact-cta a:hover{
+    color:white;
+    background:var(--pink) ;
+}
+
+.secondary-cta{
+    display:inline-block;
+    border:1px solid var(--pink);
+    padding:8px 14px;
+    border-radius:8px
+}
+
+/* Footer */
+.site-footer{
+    background:var(--pink);
+    color:white;
+    padding:18px 0;
+    margin-top:26px
+}
+
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px
+}
+.small{
+    font-size:13px;
+    color:rgba(255,255,255,0.9)
+}
+
+/* Main content helpers */
+.main-content{
+    padding:28px 0
+}
+
+.types-membres{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/16.jpg) no-repeat center / cover;
+    padding:28px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom:18px;
+    color: white;
+    height:9cm;
+}
+.card{
+    background:var(--card-bg);
+    padding:18px;border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom:18px
+}
+
+.grid-2{display:grid;
+    grid-template-columns:1fr;
+    gap:16px
+}
+
+/* css du formulaire  */
+.card-form{
+    background: url(./images/6.webp) no-repeat center / cover ;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom:18px;
+}
+
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px
+}
+
+.form-grid label{
+    display:block;
+    font-size:14px;
+    color:#333
+}
+
+.form-grid input, .form-grid textarea{
+    width:100%;
+    padding:10px;
+    border:0.5px solid #ddd;
+    border-radius:6px;
+    font-size:15px;
+    opacity: 0.5;
+    /* background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
+}
+
+.form-actions{
+    display:flex;
+    justify-content:flex-start
+}
+
+.mini-btn{
+    background:var(--pink);
+    color:white;
+    border:0;
+    padding:6px 10px;
+    border-radius:6px;
+    cursor:pointer
+}
+
+/* Placeholder visual */
+.placeholder{
+    height:160px;
+    background:#EEE;
+    border-radius:6px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--muted);
+    font-weight:600;
+}
+
+/* Responsive */
+@media(min-width:700px){
+  .nav-toggle{display:none}
+  .main-nav{display:flex}
+  .mobile-menu{display:none !important}
+  .three-cards{grid-template-columns:repeat(3,1fr)}
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{flex-direction:row}
+}
+
+@media(max-width:699px){
+  .nav-toggle{display:block}
+  .main-nav{display:none}
+  .mobile-menu{display:none}
+  .header-inner{gap:8px}
+  .brand{font-size:18px}
+  .hero h1{font-size:26px}
+  .footer-inner{flex-direction:column;gap:8px;text-align:center}
+}

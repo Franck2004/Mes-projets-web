@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head >
+    <meta charset="UTF-8">
+    <title> formulaire </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containeur ">
+        <!-- legend permetde donner un titre au fielset -->
+     <form action="" method="post">
+        <h2>Informations personnelles</h2><br>
+        <div class="input-box">
+        <label for="">Nom:</label><br>
+        <input type="text" name="nom" placeholder=" Entrez votre nom"><br>
+        </div>
+        
+        <div class="input-box">
+        <label for="">Prénom:</label><br>
+        <input type="text" name="prenom" placeholder=" Entrez votre prenom"><br>
+        </div>
+
+        <div class="input-box">
+        <label for=""> Nationalité:</label><br>
+        <input type="text" placeholder=" Quelle est votre nationalité ?"><br>
+        </div>
+        
+        <div class="input-box">
+        <label for="AGE"> Age:</label><br>
+        <input type="number" placeholder=" Vous avez quel age?"><br>
+        </div>
+
+        <div class="sexe">
+        <label for=""> Sexe: </label><br>
+        <input type="radio" name="genre" > MASCULIN 
+        <input type="radio" name="genre"> FEMININ <br>
+        </div>
+
+        <!-- dans les elements de type radio, c'est l'attribut name qui fait en sorte 
+         qu'un element soit cocé a la fois ! et surtout , il faut que les attributs
+         names aient la meme valeur  -->
+
+        <div class="input-box">
+        <label for=""> Choix Des Loisirs :</label><br>
+        <select name="loisirs" id="loisirs">
+            <optgroup label="Selectionnez " ></optgroup>
+                <!-- la balise optgroup permet d'afficher l'entete, ou le titre du menu deroulant 
+                 ,donc c'est pas obligé qu'il soit présent  -->
+
+             <option value="">football</option>
+             <option value="">basket-ball</option>
+             <option value="">volley-ball</option>
+             <option value="">hand-ball</option>
+             <option value="">tennis</option>
+
+            
+        </select><br>
+        </div>
+        
+        <input type="submit" name="soumettre" value="Envoyez">
+        <input type="reset" name="effacer" value="Réinitialiser">
+     </form>
+    </div>
+    
+</body>
+</html>

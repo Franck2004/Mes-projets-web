@@ -1,0 +1,92 @@
+*,::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+/*css de la navigation*/
+nav{
+    position: fixed;
+    height: 70px;
+    width:100%;
+    background: linear-gradient(to bottom, #333, #626262);
+    z-index: 10;
+
+}
+
+
+.logo-menu{
+    position: absolute;
+    z-index: 11;/* ici je mets le z-index a 11 pour que ca soit au dessus de la bar de navigation sahant que le z-index de la navigation c'est 10*/
+    top: 10px;
+    right: 15px;
+    width: 50px;
+    display:none; /* ici je dis display none pour que le menu hamburger ne s'affiche pas de base , juste quand ca sera sur un petit ecran*/
+}
+
+.liste-nav{
+     background: linear-gradient(to bottom, #333, #626262);
+     height: 100%;
+     width: 100%;
+     display:flex;
+     justify-content: center;
+     list-style: none;
+     z-index: 12;
+}
+
+.item-nav{
+    display: flex;
+    align-items: center;
+}
+
+.item-nav a{
+    font-size: 22px;
+    color:#f1f1f1;
+    text-decoration: none;
+    margin: 0 20px;
+    text-transform:uppercase;
+}
+
+
+.item-nav a::after{
+    content: "";
+    display :block;
+    margin: 0 auto; /*rappel margin 0 auto permet de centrer l'element horizontalement avec un largeur qu'on doit definir bien sur*/
+    width: 0%;
+    height: 2px;
+    background: #f1f1f1;
+    transition: width 0.2s 
+    ease-in-out;
+     
+}
+
+.item-nav a:hover::after{
+    width:100%;
+}
+
+@media screen and (max-width: 700px) {
+    .logo-menu{
+        display:block;
+    }
+    .liste-nav{
+        padding-top: 70px;
+        flex-direction: column;
+        height: auto;
+        position:relative;
+        display:none;
+    }
+    .lite-nav.active{
+        display:block;
+    }
+    .item-nav{
+        height: 70px;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+

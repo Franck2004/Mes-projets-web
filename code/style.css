@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     background: linear-gradient(#380036 , #0cbaba);
+}
+.containeur{
+    max-width: 650px;
+    padding: 38px;
+    margin: 38px;
+    border-radius: 10px;
+    /*overflow: hidden;*/
+    background-color: aqua;
+    box-shadow: 0 25px 30px;
+}  
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: fuchsia ;
+    border-bottom: 8px solid silver;
+
+}
+.input-box input{ 
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.loisirs{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    outline: none;
+}
+.metiers{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    outline: none;
+}
+.sexe label{
+    font-size: 15px;
+    cursor: pointer;
+
+}
+input[type=submit]{
+    width: 100%;
+    margin-top: 10%;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: chocolate ;
+    border-radius: 5px;
+    background-image:linear-gradient(to right , #aa076b , #61045f);
+    cursor: pointer;
+    transition: 0.9x;
+}
+input[type=reset]{
+    width: 100%;
+    margin-top: 10%;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: chocolate ;
+    border-radius: 5px;
+    background-image:linear-gradient(to right , #aa076b , #61045f);
+    cursor: pointer;
+    transition: 0.9x;
+}
+input[type=submit]:hover{
+    background-image:linear-gradient(to right , #61045f , #aa076b) ;
+
+}
+input[type=reset]:hover{
+    background-image:linear-gradient(to right , #61045f , #aa076b) ;
+    
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Faire un don - Ayons le Cœur sur la Main</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Ayons le Cœur sur la Main</a>
+
+      <nav class="main-nav" id="main-nav-5">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+        <a class="don-btn" href="don.html">Faire un don</a>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="actualites.html">Actualités</a>
+    <a href="contact.html">Contact</a>
+    <a class="don-btn" href="don.html">Faire un don</a>
+  </div>
+
+  <main class="container main-content">
+    <h1>FAIRE UN DON</h1>
+    <p>Vous pouvez soutenir l'association en faisant un don via Mobile Money ou par virement bancaire. Merci pour votre générosité.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Mobile Money</h3>
+        <p><strong>OM :</strong> +237 699 969 355 <button onclick="copyText('+237699969355')" class="mini-btn">Copier</button></p>
+        <p><strong>MOMO :</strong> +237 672 881 296 <button onclick="copyText('+237672881296')" class="mini-btn">Copier</button></p>
+      </div>
+
+      <div class="card">
+        <h3>Comptes bancaires</h3>
+        <p><strong>BICEC CAMEROUN</strong> COMPTE N° 72521500001 <button onclick="copyText('72521500001')" class="mini-btn">Copier</button></p>
+        <p><strong>SCB CAMEROUN</strong> COMPTE N° 90001837008-33 <button onclick="copyText('90001837008-33')" class="mini-btn">Copier</button></p>
+      </div>
+    </div>
+
+    <p class="small">Merci de préciser la description du paiement (ex. soutien alimentaire, scolarité, projet agricole...).</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>AYONS LE CŒUR SUR LA MAIN</strong>
+        <p class="small">Contact : (+237) 672 881 296  | Email : ayonslecoeursurlamain10@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
