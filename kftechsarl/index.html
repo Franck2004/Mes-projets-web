@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KFTech - Boutique en ligne spécialisée dans les ordinateurs, smartphones et accessoires high-tech. Découvrez nos nouveautés boostées à l'IA et profitez de nos offres exclusives.">
+    <title>KFTech | Boutique High-Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .product-card:hover .cart-btn { transform: translateY(0); opacity: 1; }
+    </style>
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+</head>
+<body class="bg-gray-50 text-slate-900">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-orange-500 p-1.5 rounded-lg">
+                    <!-- <i data-lucide="cpu" class="text-white w-6 h-6"></i> -->
+                     <img src="images/logo.jpg" alt="Logo KFTech" class="w-16 h-10 object-cover rounded-md">
+                </div>
+                <span class="text-xl font-bold tracking-tight">KF<span class="text-orange-500">Tech</span></span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#" class="hover:text-orange-500 transition">Ordinateurs</a>
+                <a href="#" class="hover:text-orange-500 transition">Smartphones</a>
+                <a href="#" class="hover:text-orange-500 transition">Accessoires</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="p-2 hover:bg-gray-100 rounded-full transition relative">
+                    <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                    <span class="absolute top-0 right-0 bg-orange-500 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">3</span>
+                </button>
+                <button class="md:hidden p-2 hover:bg-gray-100 rounded-full">
+                    <i data-lucide="menu" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-orange-950 py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-72 h-72 bg-blue-500 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500 rounded-full blur-[120px]"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-orange-400 text-xs font-bold mb-4 tracking-wider uppercase">Ventes Flash - Black Friday</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                L'excellence technologique <br> à portée de main.
+            </h1>
+            <p class="text-orange-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                Découvrez notre nouvelle gamme d'ordinateurs boostés à l'IA et de smartphones dernière génération.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="bg-orange-500 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-orange-500/20">Explorer la collection</a>
+                <a href="#" class="bg-white/10 hover:bg-white/20 text-white border border-white/10 px-8 py-4 rounded-xl font-bold backdrop-blur-sm transition">Nos promotions</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 -mt-10 relative z-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center hover:shadow-xl transition group cursor-pointer">
+                <div class="w-12 h-12 bg-blue-50 text-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-500 group-hover:text-white transition">
+                    <i data-lucide="laptop"></i>
+                </div>
+                <span class="font-bold text-orange-850">Laptops</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center hover:shadow-xl transition group cursor-pointer">
+                <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition">
+                    <i data-lucide="smartphone"></i>
+                </div>
+                <span class="font-bold text-orange-850">Mobiles</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center hover:shadow-xl transition group cursor-pointer">
+                <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-600 group-hover:text-white transition">
+                    <i data-lucide="headphones"></i>
+                </div>
+                <span class="font-bold text-orange-850">Audio</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center hover:shadow-xl transition group cursor-pointer">
+                <div class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-600 group-hover:text-white transition">
+                    <i data-lucide="watch"></i>
+                </div>
+                <span class="font-bold text-orange-850">Accessoires</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 py-20">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <h2 class="text-3xl font-bold text-orange-950">Nouveautés</h2>
+                <p class="text-orange-550 mt-2">Les produits les plus demandés cette semaine.</p>
+            </div>
+            <a href="#" class="text-orange-500 font-semibold flex items-center gap-2 hover:underline">
+                Voir tout <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div class="bg-white rounded-3xl border border-gray-100 overflow-hidden product-card group transition hover:shadow-2xl hover:-translate-y-1">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=500&q=80" alt="Macbook" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm">Apple</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-lg mb-1">MacBook Pro M3 14"</h3>
+                    <p class="text-orange-550 text-sm mb-4 italic">Gris Sidéral, 16GB RAM</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-black text-orange-950">1999.000 XAF</span>
+                        <button class="bg-orange-950 text-white p-3 rounded-xl hover:bg-orange-500 transition">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border border-gray-100 overflow-hidden product-card group transition hover:shadow-2xl hover:-translate-y-1">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&w=500&q=80" alt="iPhone" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Top Vente</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-lg mb-1">iPhone 15 Pro Max</h3>
+                    <p class="text-orange-550 text-sm mb-4 italic">Titane Naturel, 256GB</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-black text-orange-950">1449.000 XAF</span>
+                        <button class="bg-orange-950 text-white p-3 rounded-xl hover:bg-orange-500 transition">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border border-gray-100 overflow-hidden product-card group transition hover:shadow-2xl hover:-translate-y-1">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=500&q=80" alt="Casque" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-lg mb-1">Beats Studio Pro</h3>
+                    <p class="text-orange-550 text-sm mb-4 italic">Noir Mat, Réduction de bruit</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-black text-orange-950">329.000 XAF</span>
+                        <button class="bg-orange-950 text-white p-3 rounded-xl hover:bg-orange-500 transition">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl border border-gray-100 overflow-hidden product-card group transition hover:shadow-2xl hover:-translate-y-1">
+                <div class="relative aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=500&q=80" alt="Setup" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-lg mb-1">Station de Charge 3-en-1</h3>
+                    <p class="text-orange-550 text-sm mb-4 italic">MagSafe compatible</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-black text-orange-950">89.000 XAF</span>
+                        <button class="bg-orange-950 text-white p-3 rounded-xl hover:bg-orange-500 transition">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="bg-orange-500 p-1.5 rounded-lg">
+                        <!-- <i data-lucide="cpu" class="text-white w-5 h-5"></i> -->
+                     <img src="images/logo.jpg" alt="Logo KFTech" class="w-16 h-10 object-cover rounded-md">
+
+                    </div>
+                    <span class="text-lg font-bold tracking-tight">KFTech
+        
+                    </span>
+                </div>
+                <p class="text-slate-500 leading-relaxed">
+                    Votre destination premium pour le matériel informatique et les accessoires mobiles de pointe.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-bold mb-4">Produits</h4>
+                    <ul class="space-y-2 text-slate-500 text-sm">
+                        <li><a href="#" class="hover:text-orange-500">Laptops</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Smartphones</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Composants</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-slate-500 text-sm">
+                        <li><a href="#" class="hover:text-orange-500">Livraison</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Retours</a></li>
+                        <li><a href="#" class="hover:text-orange-500">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Newsletter</h4>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Votre email" class="bg-gray-100 border-none rounded-xl px-4 py-3 flex-1 text-sm focus:ring-2 focus:ring-orange-500 outline-none">
+                    <button class="bg-orange-500 text-white px-4 rounded-xl font-semibold text-sm">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-gray-100 text-center text-orange-450 text-xs">
+            &copy; 2026 KFTech AI. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script>
+        // Initialisation des icônes Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
