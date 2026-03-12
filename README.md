@@ -1,2 +1,2 @@
 # Mes-projets-web
-mes projets web pro et apprentissage
+mes projets web pro et apprentissage du code
